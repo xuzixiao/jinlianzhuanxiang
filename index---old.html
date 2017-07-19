@@ -1,0 +1,235 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>首页</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.min.js"></script>
+<script src="js/banner.js"></script>
+<script src="js/jquery.yx_rotaion.js"></script>
+</head>
+
+<body>
+	<div  class="wrap">
+    	<div class="auto head">
+        	<ul class="lanrenzhijia fl">
+            	 <li class="lz_li">
+                    <a href="#" class="at01">首页</a>
+           		 </li>
+            
+                <li class="lz_li">
+                    <a href="#" class="at01">关于我们</a>
+                    <ul class="second fl">
+                       <li> <a href="#">企业文化</a></li>
+                       <li>   <a href="#">加入我们</a></li>
+                        <li>  <a href="#">联系我们</a></li>
+                    </ul>
+                </li>
+                 <li class="lz_li">
+                    <a href="#" class="at01">新闻中心</a>
+           		 </li>
+                
+                  <li class="lz_li">
+                    <a href="#" class="at01">产品中心</a>
+                     <ul class="second fl">
+                        <li><a href="#">电商产品</a></li>
+                        <li><a href="#">金融产品</a></li>
+                    </ul>
+           		 </li>
+                  <li class="lz_li">
+                    <a href="#" class="at01">走进商城</a>
+           		 </li>
+                  <li class="lz_li">
+                    <a href="#" class="at01">线下门店</a>
+           		 </li>
+            </ul>
+        	 <div class="logo"></div>
+        	
+        </div>
+        <script>
+			$(document).ready(function() {
+				$('.lz_li').click(function() {
+					$(this).siblings().removeClass('active');
+					$(this).addClass('active');        
+                });     
+				$('.lz_li').eq(3).css('margin-left','130px');
+            });
+        </script>
+        <script>
+			$(function(){
+				var lanrenzhijia = 0; // 默认值为0，二级菜单向下滑动显示；值为1，则二级菜单向上滑动显示
+				if(lanrenzhijia ==0){
+					$('.lanrenzhijia li').hover(function(){
+						$('.second',this).css('top','30px').show();
+					},function(){
+						$('.second',this).hide();
+					});
+				}
+			});
+	  </script>
+      <div class="banner" id="banner">
+      	<ul id="js_banner_img" class="banner_img clear">
+            <li><div class="banner_inner"><img src="images/banner01.jpg"></div></li> 
+            <li><div class="banner_inner"><img src="images/banner02.jpg"></div></li>          
+	</ul>
+	<div class="banner_common">
+		<a id="js_banner_pre" href="javascript:;" class="banner_pre"></a>
+		<a id="js_banner_next" href="javascript:;" class="banner_next"></a>
+	</div>
+    <script>
+	$(function(){
+		var $window = $(window),
+			window_width =1920;
+		$('#js_banner, #js_banner_img li').width(window_width);
+
+		var urlParam = G.util.parse.url(),
+			startFrame = 0;
+		if (urlParam.search && ('banner' in urlParam.search)) {
+			startFrame = (parseInt(urlParam.search['banner'])-1) || 0;
+		}
+
+		new $.Tab({/*添加圆点按钮*/
+			target: $('#js_banner_img li'),
+			effect: 'slide3d',
+			animateTime: 1000,
+			stay: 100000,
+			playTo: startFrame,
+			autoPlay: true,
+			merge: true,
+			prevBtn: $('#js_banner_pre'),
+			nextBtn: $('#js_banner_next')
+		});
+		//$('#js_banner_img').css('left','-' + (window_width * startFrame) + 'px');
+	})
+</script>
+      </div>
+      <div class="clear"></div>
+     <div style="width:100%;float:left; background:#f3f3f3;">
+      <div class="auto quality">
+      	<div class="qua_l fl"><img src="images/a01.jpg"></div>
+        <div class="qua_r fr">
+        	<p class="text1">100 万高净值家庭的品质生活管家</p>
+            <p class="text2">金联专享依托互联网的透明与大数据的高效，将安全、健康、原生态的优质特供产品带进城市居民的生活。我们更依靠大数据科技，对接优质资产，严守风控，为中国高净值群体提供更稳健的专享理财产品，构建安
+心安全的金融生态体系。</p>
+			<p class="text2">崇尚绿色健康，尊重财富自由，我们坚信高品质的生活需要财富，更需要态度。我们坚持以产品和技术为核心竞争力，以追求极致的产品和服务为使命，致力为中国 100 万高净值家庭提供高品质、个性化的生活、金
+融服务，成为他们认可、信任、依赖的品质生活服务管家。</p>
+        </div>
+      </div>
+     </div> 
+     <div style="width:100%; background:#ffffff; float:left;">
+ 	<div class="auto news">
+    	 <div class="news_l fl">
+            	<p class="news_tt">新闻动态</p>
+                <ul>
+                	<li>
+                        <span class="sp01"> <img src="images/u150.png"></span>  
+                        <span class="sp02 fr">金联专享套餐卡功能上线了</span>
+                    </li>
+                    <li>
+                        <span class="sp01"> <img src="images/u150.png"></span>  
+                        <span class="sp02 fr">金联专享套餐卡功能上线了</span>
+                    </li>
+                    <li>
+                        <span class="sp01"> <img src="images/u150.png"></span>  
+                        <span class="sp02 fr">金联专享套餐卡功能上线了</span>
+                    </li>
+                    <li>
+                        <span class="sp01"> <img src="images/u150.png"></span>  
+                        <span class="sp02 fr">金联专享套餐卡功能上线了</span>
+                    </li>
+                      <li>
+                        <span class="sp01"> <img src="images/u150.png"></span>  
+                        <span class="sp02 fr">金联专享套餐卡功能上线了</span>
+                    </li>
+                    <li>
+                        <span class="sp01"> <img src="images/u150.png"></span>  
+                        <span class="sp02 fr">金联专享套餐卡功能上线了</span>
+                    </li>
+                </ul>
+                
+            </div>
+            <div class="news_r fr">
+            	<div class="yx-rotaion">
+                    <ul class="rotaion_list">  
+                        <li><a href="#"><img src="images/small01.jpg" alt="金联专享与中国云谷签署战略性合作协议框架"></a></li>
+                        <li><a href="#"><img src="images/small02.jpg" alt="金联专享与中国云谷签署战略性合作协议框架"></a></li>
+                        <li><a href="#"><img src="images/small03.jpg" alt="金联专享与中国云谷签署战略性合作协议框架"></a></li>
+                        <li><a href="#"><img src="images/small04.jpg" alt="金联专享与中国云谷签署战略性合作协议框架"></a></li>
+                    </ul>
+				</div>
+            </div>
+			<script type="text/javascript">
+				$(".yx-rotaion").yx_rotaion({auto:true});
+			</script>
+      </div>
+    </div>
+     <div class="clear"></div>
+     <div style="width:100%;float:left; background:#f3f3f3;">
+      <div class="auto quality">
+      	<div class="qua_l fl"><img src="images/a01.jpg"></div>
+        <div class="qua_r fr">
+        	<p class="text1">100 万高净值家庭的品质生活管家</p>
+            <p class="text2">金联专享依托互联网的透明与大数据的高效，将安全、健康、原生态的优质特供产品带进城市居民的生活。我们更依靠大数据科技，对接优质资产，严守风控，为中国高净值群体提供更稳健的专享理财产品，构建安
+心安全的金融生态体系。</p>
+			<p class="text2">崇尚绿色健康，尊重财富自由，我们坚信高品质的生活需要财富，更需要态度。我们坚持以产品和技术为核心竞争力，以追求极致的产品和服务为使命，致力为中国 100 万高净值家庭提供高品质、个性化的生活、金
+融服务，成为他们认可、信任、依赖的品质生活服务管家。</p>
+        </div>
+      </div>
+     </div> 
+     <div class="wrap store">
+     	<div class="auto">
+        	<p>
+金联专享以用户体验先行，根据地域差异、居民习惯，在不同城市精心打造线下实体体验店。在保持统一风格的前提下，更多的融合当地特色，为城市居民提供高品质的生活用品和服务体验。未来，300 多家体验店将在全国铺陈开来，将带给您更多新鲜体验。
+</p>
+		</div>
+     </div>
+     
+     <div class="wrap property">
+     	<div class="auto">
+        	<div class="p-l fl">
+            	<img src="images/a01.jpg">
+            </div>
+            <div class="p-r fr">
+            	<p class="text1">金联金融 专业为您理财</p>
+                <p class="text2">【 财管通】系列产品是金联专享为广大投资用户提供以融资租赁业务为交易模式的投资产品。与金联合作的出租方（国有金融资产交易中心）通过向投资用户转让收益权，将所融资金用于购买承租方（借款企业）所需设备或资产并出租给承租方使用。承租方按时对投资用户付租还本。投资用户通过认购【财管通】系列产品安享稳定收益。</p>
+                <p class="text2">【私募基金】系列主要面向高净值人群，代理优质三方基金产品，打造一站式私募基金超市。通过层层风控与背调从浩瀚的基金市场中为金联专享客户挑选出与客户需求最为相匹配的基金产品。为高净值客户提供一站式基金推荐服务</p>
+                <p class="text2">【供应链金融】系列主要是围绕核心企业，管理上下游中小企业的资金流和物流，并把握单个企业的不可控风险为供应链企业整体的可控风险，通过立体获取各类信息，将风险控制在最低的金融信贷和创投服务。金联专享与核心企业合作，让投资用户有机会参与其中。</p>
+                <p class="text2">【消费金融】凭借互联网和大数据为会员提供科学的消费贷款和分期付服务。</p>
+            </div>
+        	
+        </div>
+     </div>
+     <div class="wrap footer">
+     	<div class="auto">
+        	<div class="ft_l fl">
+            	<div class="ft_l_t">
+                	<span>首页 / </span><span>关于我们  / </span>
+                    <span>新闻中心  / </span><span>产品中心  / </span>
+                    <span>线下门店 / </span><span>企业文化 / </span>
+                    <span>走进商城 / </span><span>联系我们  </span>
+                    <div class="tell">电话：400-770-6678</div>
+                </div>
+                <div class="clear"></div>
+                <div class="ft_l_b">京ICP备1590300号-8    © 2016 金联专享 All rights reserved    |    北京金联专享电子商务有限公司</div>          
+            </div>
+            <div class="ft_r fl">
+            	<span>
+                	<img src="images/erweima01.jpg">
+                    <p>关注微信号</p>
+                </span>
+                <span style="margin-right:0px;">
+                	<img src="images/erweima01.jpg">
+                    <p>扫描下载APP</p>
+                </span>
+            
+            </div>
+        	
+        </div>
+     
+     </div>
+    
+    </div>
+
+	
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>产品中心-金融</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.min.js"></script>
+<script src="js/banner.js"></script>
+<script src="js/jquery.yx_rotaion.js"></script>
+<script src="js/tab.js"></script>
+<script src="js/yangshi.js"></script>
+</head>
+
+<body>
+	<div  class="wrap">
+    	<div class="auto head">
+        	<ul class="lanrenzhijia fl">
+            	 <li class="lz_li">
+                    <a href="index.html" class="at01">首页</a>
+           		 </li>
+            
+                <li class="lz_li">
+                    <a href="guanyuwomen.html" class="at01">关于我们</a>
+                    <ul class="second fl">
+                       <li><a href="qiyewenhua.html">企业文化</a></li>
+                       <li><a href="jiaruwomen.html">加入我们</a></li>
+                       <li><a href="lianxiwomen.html">联系我们</a></li>
+                    </ul>
+                </li>
+                 <li class="lz_li">
+                    <a href="xinwendongtai.html" class="at01">新闻中心</a>
+           		 </li>
+                
+                  <li class="lz_li">
+                    <a href="javascript:;" class="at01">产品中心</a>
+                     <ul class="second fl">
+                        <li><a href="chanpin-dianshang.html">电商产品</a></li>
+                        <li><a href="chanpin-jinrong.html">金融产品</a></li>
+                    </ul>
+           		 </li>
+                  <li class="lz_li">
+                    <a href="http://www.jinlianvip.com" class="at01">走进商城</a>
+           		 </li>
+                  <li class="lz_li">
+                    <a href="xianxiadianpu.html" class="at01">线下门店</a>
+           		 </li>
+            </ul>
+        	 <div class="logo"><img src="images/logo.jpg"></div>
+        	
+        </div>
+        <script>
+			$(document).ready(function() {
+				$('.lz_li').click(function() {
+					$(this).siblings().removeClass('active');
+					$(this).addClass('active');        
+                });     
+				$('.lz_li').eq(3).css('margin-left','280px');
+            });
+        </script>
+        <script>
+			$(function(){
+				var lanrenzhijia = 0; // 默认值为0，二级菜单向下滑动显示；值为1，则二级菜单向上滑动显示
+				if(lanrenzhijia ==0){
+					$('.lanrenzhijia li').hover(function(){
+						$('.second',this).css('top','30px').show();
+						//$('.second',this).show();
+					},function(){
+						$('.second',this).hide();
+					});
+				}
+			});
+	  </script>
+      
+   <div class="wrap product_ad"><img src="images/bt01.jpg"></div>
+   <div class="clear"></div>
+   
+   
+   <div class="wrap a_tiyan">
+   	<div class="auto">
+    	<div class="a_t_l fl">
+        	<p class="a_t_p1">金联专享体验店 遍及生活的每座城市</p>
+            <p class="a_t_p2">金联专享以用户体验先行,根据地域差异、居民习惯,在不同城市精心打造线下实体 体验店。在保持统一风格的前提下,更多的融合当地特色,为城市居民提供高品质的 生活用品和服务体验。未来,300 多家体验店将在全国铺陈开来,将带给您更多新鲜 体验。</p>
+        </div>
+        <div class="a_t_r fr">
+        	<div class="yx-rotaion">
+                <ul class="rotaion_list">
+                    <li><a href="#"><img src="images/1.jpg" alt="青岛体验店开业啦"></a></li>      
+                    <li><a href="#"><img src="images/1.jpg" alt="青岛体验店开业啦2"></a></li> 
+                    <li><a href="#"><img src="images/1.jpg" alt="青岛体验店开业啦3"></a></li>        
+                </ul>
+            </div>
+        </div>
+    </div>
+   <script type="text/javascript">
+		$(".yx-rotaion").yx_rotaion({auto:true});
+   </script>     
+</div>
+
+<div class="wrap a_zhibo">
+	<div class="auto">
+    	<p>金联专享-青岛线下体验店直播</p>
+        <ul class="a_zhibo_ul fl">
+        	<li> 
+            <embed src="http://www.jinlianvip.cn/liveRadio/005.html" style="width:390px !important; height:350px !important; overflow: hidden"> </embed>
+            </li>
+            <li> 
+            <embed src="http://www.jinlianvip.cn/liveRadio/006.html" style="width:390px !important; height:350px !important; overflow: hidden"> </embed>
+            </li>
+            <li> 
+            <embed src="http://www.jinlianvip.cn/liveRadio/007.html" style="width:390px !important; height:350px !important; overflow: hidden"> </embed>
+            </li>
+        </ul>
+    </div>
+	
+</div>
+
+<div class="wrap tydfc">
+	<div class="auto">
+    	<p>线下体验店风采</p>
+        <ul>
+        	<li><img src="images/tiyan01.jpg"></li>
+            <li><img src="images/tiyan01.jpg"></li>
+            <li><img src="images/tiyan01.jpg"></li>
+            <li><img src="images/tiyan01.jpg"></li>
+        </ul>
+    </div>
+
+</div>
+
+<div class="clear"></div>
+<div class="wrap a_lianxi">
+<div class="auto">
+	<div class="a_l_xl fl"><img src="images/lianxi.jpg"></div>
+    <div class="a_r_xl fl">
+    	<p class="size24">山东省青岛体验店</p>
+        <p>地址：山东省青岛市市南区福州南路与闽江</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;路交叉口 西北50米（金联专享）</p>
+        <p class="size24">营业时间</p>
+        <p>周一至周日：上午10:00-晚上10:00</p>
+    	
+    </div>
+    
+
+</div>
+</div>
+
+
+
+
+
+   
+   
+   
+   
+   
+
+      
+     <div class="wrap footer">
+     	<div class="auto">
+        	<div class="ft_top fl">
+            	<span class="ft_tell fl">400-770-6678</span>
+                <span class="erweima fl"><img src="images/erweima01.jpg"></span>
+                <span class="erweima fl ml20"><img src="images/erweima02.jpg"></span>
+            </div>
+            <div class="ft_cen fl">
+            	<ul class="ft_ul1 fl">
+                	<li>HOME  首页<span style="float:right;">|</span></li>
+                    <li>关于我们<span style="float:right;">|</span></li>
+                    <li>新闻中心<span style="float:right;">|</span></li>
+                    <li>产品中心<span style="float:right;">|</span></li>
+                </ul>
+                <ul class="ft_ul1 ft_ul2 fr">
+                	<li>线下门店<span style="float:right;">|</span></li>
+                    <li>企业文化<span style="float:right;">|</span></li>
+                    <li>走进商城<span style="float:right;">|</span></li>
+                    <li>联系我们<span style="float:right;">|</span></li>
+                </ul>	
+            </div>
+            <div class="ft_hr fl"></div>
+            <div class="ft_wap fl">
+            	<span class="ft_sp1">www.jinlianvip.com</span>
+                <span class="ft_sp2"></span>
+                <span class="ft_sp1 ml20">www.jinlianvip.com</span>
+            </div>
+            <div class="ft_bottom fl">京ICP备1590300号-8    © 2016 金联专享 All rights reserved    |    北京金联专享电子商务有限公司 </div>
+            
+            	
+           
+        
+        </div>
+     	
+
+     </div>
+    
+    </div>
+
+	
+</body>
+</html>
